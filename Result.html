@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Page</title>
+    <style>
+        body {
+            border: 2px solid black;
+        }
+
+        .container {
+            border: 1px solid black;
+            text-align: center;
+            height: 150px;
+            background-color: #e791e4;
+        }
+
+        .logo {
+            border: 30px solid green;
+            background-color: white;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            margin-top: 5px;
+            margin-left: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            font-size: 40px;
+        }
+
+        #header {
+            margin-top: 35px;
+            color: white;
+
+        }
+
+        .navbar {
+            background-color: #baf5f1;
+            border: 1px solid black;
+            font-size: 25px;
+            list-style-type: none;
+
+        }
+
+
+        .navbar li {
+            display: inline-block;
+            padding: 20px 20px;
+
+        }
+
+        .navbar li:hover {
+            background-color: #ebeae0;
+            color: white;
+        }
+
+        .navbar li:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown {
+            display: none;
+            background-color: #deb8a8;
+            position: absolute;
+            margin-top: 10px;
+        }
+
+        .dropdown .btn {
+            display: block;
+            text-decoration: none;
+            padding: 10px 16px;
+        }
+
+        .dropdown .btn:hover {
+            background-color: lightblue;
+            color: green;
+        }
+
+        .table {
+            width: 100%;
+            height: 500px;
+            font-size: 25px;
+            text-align: center;
+            border-collapse: collapse;
+            background-color: rgb(228, 222, 222);
+        }
+
+        .table th {
+            width: 20%
+        }
+
+        .para {
+            padding: 30px 30px;
+            border: 1px solid black;
+            font-size: 35px;
+            color: white;
+            background-color: rgb(145, 231, 127);
+            text-transform: uppercase;
+        }
+
+        .footer {
+            background-color: #a2d9d4;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 30px;
+            padding: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>R</h1>
+        </div>
+        <h1 id="header">RAJ SCHOOL OF MANAGEMENT & SCIENCES <br> BABATPUR, VARANASI</h1>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="">Courses
+                    <ul class="dropdown">
+                        <li class="btn">B.C.A.</li>
+                        <li class="btn">B.Sc.</li>
+                        <li class="btn">M.C.A.</li>
+                        <li class="btn">B.Com.</li>
+                        <li class="btn">B.B.A.</li>
+                        <li class="btn">M.Com.</li>
+                        <li class="btn">M.B.A.</li>
+                    </ul>
+                </a>
+            </li>
+            <li><a href="result.html">Result</a></li>
+            <li><a href="About-Us.html">About-Us</a></li>
+            <li style="float: right; padding-right:30px;"><a href="account.html">Account</a></li>
+        </ul>
+    </div>
+    <table border="1" class="table">
+        <caption class="para" style="padding-bottom: 10px">Certificate-Cum-Marks Sheet</caption>
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Max.Marks</th>
+            <th>Obtained Marks</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>Rakesh</td>
+            <td>Hindi</td>
+            <td>100</td>
+            <td>80</td>
+            <td>A2</td>
+        </tr>
+        <tr>
+            <td>Chandan</td>
+            <td>English</td>
+            <td>100</td>
+            <td>88</td>
+            <td>A1</td>
+        </tr>
+        <tr>
+            <td>Nitesh</td>
+            <td>Math</td>
+            <td>100</td>
+            <td>90</td>
+            <td>B1</td>
+        </tr>
+        <tr>
+            <td>Ravi</td>
+            <td>Physics</td>
+            <td>100</td>
+            <td>75</td>
+            <td>A2</td>
+        </tr>
+        <tr>
+            <td>Shreyan</td>
+            <td>Arts</td>
+            <td>100</td>
+            <td>80</td>
+            <td>B1</td>
+        </tr>
+    </table>
+    <div class="footer">
+        <a href="Home.html">RajSms.com</a>
+    </div>
+</body>
+
+</html>
