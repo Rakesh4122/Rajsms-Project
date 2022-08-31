@@ -10,7 +10,7 @@
 			justify-content: center;
 			align-items: center;
 		}
-		.fd{
+		.form{
 			border: 2px solid black;
 			background-color: lightblue;
 			font-weight: bold;
@@ -19,6 +19,10 @@
 			height: 680px;
 			padding: 50px;
 			border-radius: 8px;
+			position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 		}
 		button{
 			font-weight: bold;
@@ -58,7 +62,7 @@
 	</style>
 </head>
 <body>
-	<form class="fd">
+	<form class="form">
 		<p><u>basic information:-</u></p>
 		<label for="first name">First Name:</label>
 		<input type="text" id="first name" name="first name" placeholder="Enter your first name"><br><br>
@@ -81,6 +85,6 @@
 		<button type="button" class="btn" style="background-color: lightgreen;">Submit</button>
 		<button type="button" class="btn" style="background-color: #f77a54;">Close</button>
 
-	</form>
+	</form> 
 </body>
 </html>

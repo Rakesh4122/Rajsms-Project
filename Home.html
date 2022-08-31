@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <style type="text/css">
         body {
             border: 2px solid black;
@@ -37,60 +38,64 @@
             position: absolute;
             font-size: 40px;
         }
-
         #header {
             margin-top: 35px;
             color: white;
 
         }
-
-        .navbar {
+        .navbar ul{
             background-color: #baf5f1;
             border: 1px solid black;
-            font-size: 25px;
-            list-style-type: none;
-
-        }
-
-        .navbar ul {
-            /* margin: 0px; */
             list-style-type: none;
         }
-
         .navbar ul li {
             display: inline-block;
             position: relative;
         }
         .navbar ul li a {
-            padding: 20px 20px;
+            padding: 14px 16px;
             display: block;
+            text-decoration: none;
+            font-size: 30px;
+            color: black;
+            transition: 0.4s;
         }
 
-        .navbar a:hover {
-            background-color: rgb(163, 163, 167);
-            color: white;
+        .navbar ul li a:hover {
+            background-color: #04945f;
+            color: #fff;
         }
 
-        .navbar li:hover .dropdown {
+        .navbar ul li:hover .dropdown {
             display: block;
         }
 
         .dropdown {
             display: none;
-            background-color: rgb(133, 133, 226);
+            background-color: #baf5f1;
             position: absolute;
-            margin-top: 20px;
+            width: 150px;
+            box-shadow: 0px 0px 6px #8a8d8c;
+            border: 1px solid #8a8d8c;
+            z-index: 999;
         }
-
-        .dropdown .btn {
+        .dropdown a {
             display: block;
             text-decoration: none;
-            padding: 10px 16px;
+            padding: 8px 16px;
+            font-size: 16px;
+            border-top: 1px solid #0000003b;
+            transition: 0.4s;
         }
 
-        .dropdown .btn:hover {
-            background-color: lightblue;
-            color: green;
+        .dropdown a:hover {
+            background-color: #04aa6d;
+            color: #fff;
+        }
+        .navbar i {
+            font-size: 24px;
+            margin-right: 4px;
+            color: red;
         }
 
         #header1 {
@@ -133,11 +138,11 @@
             border: 1px solid black;
             font-size: 20px;
             background-color: #eae0eb;
+            padding: 20px;
         }
 
         .address-1 {
-            margin-left: 80px;
-            margin-top: -20px;
+            margin-left: 120px;
             font-size: 30px;
         }
 
@@ -148,7 +153,6 @@
             padding: 40px;
             grid-template-columns: repeat(4, 1fr);
             gap: 50px;
-
         }
 
 
@@ -162,6 +166,10 @@
             border: 1px solid black;
             width: 100%;
             height: 250px;
+           
+        }
+        .img-item:hover{
+            box-shadow: 0px 0px 18px rgb(12, 14, 28);
         }
 
         .footer {
@@ -201,19 +209,18 @@
     </div>
     <div class="navbar">
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="Home.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
             <li><a href="Admission.html">Admission</a></li>
-            <li><a href="">Courses
-                    <ul class="dropdown">
-                        <li class="btn">B.C.A.</li>
-                        <li class="btn">B.Sc.</li>
-                        <li class="btn">M.C.A.</li>
-                        <li class="btn">B.Com.</li>
-                        <li class="btn">B.B.A.</li>
-                        <li class="btn">M.Com.</li>
-                        <li class="btn">M.B.A.</li>
-                    </ul>
-                </a>
+                <li><a href="#">Courses</a>
+                    <div class="dropdown">
+                        <a href="#">B.C.A.</a>
+                        <a href="#">B.Sc.</a>
+                        <a href="#">M.C.A.</a>
+                        <a href="#">B.Com.</a>
+                        <a href="#">B.B.A.</a>
+                        <a href="#">M.Com.</a>
+                        <a href="#">M.B.A.</a>
+                    </div>
             </li>
             <li><a href="Result.html">Result</a></li>
             <li><a href="About-Us.html">About-Us</a></li>

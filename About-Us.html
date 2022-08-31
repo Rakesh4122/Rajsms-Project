@@ -6,9 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>College Detail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <style>
-        body {
+      body {
             border: 2px solid black;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         .container {
@@ -21,10 +28,10 @@
         .logo {
             border: 30px solid green;
             background-color: white;
-            height: 80px;
-            width: 80px;
+            height: 140px;
+            width: 140px;
             border-radius: 50%;
-            margin-top: 5px;
+            margin-top: 4px;
             margin-left: 20px;
             display: flex;
             justify-content: center;
@@ -32,80 +39,90 @@
             position: absolute;
             font-size: 40px;
         }
-
         #header {
             margin-top: 35px;
             color: white;
-        }
 
-        .navbar {
+        }
+        .navbar ul{
             background-color: #baf5f1;
             border: 1px solid black;
-            font-size: 25px;
             list-style-type: none;
-
         }
-
-
-        .navbar li {
+        .navbar ul li {
             display: inline-block;
-            padding: 20px 20px;
-
+            position: relative;
+        }
+        .navbar ul li a {
+            padding: 14px 16px;
+            display: block;
+            text-decoration: none;
+            font-size: 30px;
+            color: black;
+            transition: 0.4s;
         }
 
-        .navbar li:hover {
-            background-color: #ebeae0;
-            color: white;
-
-
+        .navbar ul li a:hover {
+            background-color: #04945f;
+            color: #fff;
         }
 
-        .navbar li:hover .dropdown {
+        .navbar ul li:hover .dropdown {
             display: block;
         }
 
         .dropdown {
             display: none;
-            background-color: #deb8a8;
+            background-color: #baf5f1;
             position: absolute;
-            margin-top: 20px;
+            width: 150px;
+            box-shadow: 0px 0px 6px #8a8d8c;
+            border: 1px solid #8a8d8c;
+            z-index: 999;
         }
-
-        .dropdown .btn {
+        .dropdown a {
             display: block;
             text-decoration: none;
-            padding: 10px 16px;
+            padding: 8px 16px;
+            font-size: 16px;
+            border-top: 1px solid #0000003b;
+            transition: 0.4s;
         }
 
-        .dropdown .btn:hover {
-            background-color: lightblue;
-            color: green;
+        .dropdown a:hover {
+            background-color: #04aa6d;
+            color: #fff;
         }
-
-
-
-        .clg-container {
+        .navbar i {
+            font-size: 24px;
+            margin-right: 4px;
+            color: red;
+        }
+        .clg_container {
             border: 1px solid black;
             background-color: #e6ebf1;
             height: 680px;
             padding: 10px;
         }
-
+        .clg_container h2,.about_container  h2{
+            margin: 20px 0px;
+        }
+        .clg_container p,.about_container  p{
+            margin-bottom: 40px;
+            font-size: 20px;
+        }
         .container p {
             font-size: 20px;
         }
 
-        .container-1 {
-            height: 750px;
+        .about_container {
+            height: 700px;
             border: 1px solid black;
             background-color: #cde9cd;
             padding: 10px;
-        }
-
-        .container-1 {
             font-size: 20px;
-        }
 
+        }
         .header1 {
             border: 1px solid black;
             background-color: #6266e5;
@@ -135,19 +152,18 @@
     </div>
     <div class="navbar">
         <ul>
-            <li><a href="Home.html">Home</a></li>
+            <li><a href="Home.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
             <li><a href="Admission.html">Admission</a></li>
-            <li><a href="">Courses
-                    <ul class="dropdown">
-                        <li class="btn">B.C.A.</li>
-                        <li class="btn">B.Sc.</li>
-                        <li class="btn">M.C.A.</li>
-                        <li class="btn">B.Com.</li>
-                        <li class="btn">B.B.A.</li>
-                        <li class="btn">M.Com.</li>
-                        <li class="btn">M.B.A.</li>
-                    </ul>
-                </a>
+            <li><a href="#">Courses</a>
+                <div class="dropdown">
+                    <a href="#">B.C.A.</a>
+                    <a href="#">B.Sc.</a>
+                    <a href="#">M.C.A.</a>
+                    <a href="#">B.Com.</a>
+                    <a href="#">B.B.A.</a>
+                    <a href="#">M.Com.</a>
+                    <a href="#">M.B.A.</a>
+                </div>
             </li>
             <li><a href="Result.html">Result</a></li>
             <li><a href="About-Us.html">About-Us</a></li>
@@ -155,7 +171,7 @@
         </ul>
     </div>
     <h1 class="header1">About Our College</h1>
-    <div class="clg-container">
+    <div class="clg_container">
         <h2>Overview</h2>
         <p>In this section, you'll meet our leadership — including the President and Board of Regents — and you'll learn
             of our vision, mission and values.Raj School of Management & Sciences Affiliated to Mahatma Gandhi Kashi
@@ -164,9 +180,7 @@
         <h2>Welcome To RAJSMS College!</h2>
         <p>At RAJSMS College, it’s important to us to be a community college that’s as focused on the community part as
             we are the college part. In all that we do, it is our commitment to you to go beyond simply providing an
-            education — to providing you with the guidance you need at every level.
-
-            It starts with our Student Welcome and Career Advisement Centers, here to make getting started as easy as
+            education — to providing you with the guidance you need at every level.It starts with our Student Welcome and Career Advisement Centers, here to make getting started as easy as
             possible. And once you’re a student, you’ll discover the advantages that our students tell us over and over
             they love about Rose State: smaller class sizes, more one-on-one time with teachers, and serious academic
             focus in a more relaxed, friendly atmosphere.
@@ -177,7 +191,7 @@
             Social Sciences) and eLearning and Academic Outreach. More than 60 degree and skilled-occupational programs
             are available, many of which can help you prepare for completion of a bachelor’s degree.</p>
 
-        <p>Rose State also offers its Workforce Development division, comprised of the Community Learning Center and the
+            <p>Rose State also offers its Workforce Development division, comprised of the Community Learning Center and the
             Professional Training Center. The Community Learning Center is known for its wide range of lifelong learning
             programs, including its popular Kids College. The Professional Training Center offers business training,
             small business advising, and is home to the Oklahoma Environmental Training Center where people from
@@ -191,7 +205,7 @@
 
     </div>
     <h1 class="header1">About Faculty</h1>
-    <div class="container-1">
+    <div class="about_container">
         <h2>Teaching:</h2>
 
         <p>Each faculty member is responsible for the quality and content of instruction in the classroom. The
@@ -211,7 +225,7 @@
             <li>Develop efficient and equitable procedures for the evaluation of student academic performance and assign
                 grades that reflect the achievement and progress of students enrolled in the courses. Provide timely and
                 appropriate feedback to students.
-        </ol>
+            </ul>
         <h2>Scholarship and Creative Activities:</h2>
         <p>Faculty members are expected to remain active in their fields of study or artistic/creative practices through
             research, creative output, and other professional activities as described by their Department and/or
